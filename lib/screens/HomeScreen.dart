@@ -1,9 +1,9 @@
-import 'package:credassignmentrahul/screens/CategoriesScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../utill/color_resources.dart';
 import '../utill/images.dart';
 import '../widget/custom_button.dart';
+import 'CategoriesScreen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -52,16 +52,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Padding(
                 padding:   const EdgeInsets.symmetric(horizontal: 25,vertical: 0),
                   child: Text(
-    "grow your saving.\n3x faster",
-    style: GoogleFonts.lora(
-    fontSize: 20,
-    color: ColorResources.TEXTCOLORLIGTH,
-    fontWeight: FontWeight.w500,
-    ),
-    ),
-    )),
-
-          const SizedBox(height: 10),
+                                      "grow your saving.\n3x faster",
+                                      style: GoogleFonts.lora(
+                                        fontSize: 20,
+                                         color: ColorResources.TEXTCOLORLIGTH,
+                                         fontWeight: FontWeight.w500),),)),
+               const SizedBox(height: 10),
 
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25,vertical:25),

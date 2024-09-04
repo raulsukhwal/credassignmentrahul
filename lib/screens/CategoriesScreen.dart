@@ -100,15 +100,15 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         backgroundColor: ColorResources.PRIMARYCOLORDARK,
         elevation: 0,
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_sharp, color: ColorResources.TEXTOFFWHITE),
+          icon: const Icon(Icons.arrow_back_ios_sharp, color: ColorResources.TEXTOFFWHITE),
           onPressed: () {
-            Navigator.pop(context); // Go back to the previous page
+            Navigator.pop(context);
           },
         ),
       ),
       body: Stack(
         children: [
-          Positioned(
+          const Positioned(
             left: 25,
             child: Text(
               "explore",
@@ -149,7 +149,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                     ),
                     child: Row(
                       children: [
-                        SizedBox(width: 2),
+                        const SizedBox(width: 2),
                         Icon(
                           Icons.grid_view_sharp,
                           size: 20,
@@ -157,7 +157,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                               ? ColorResources.OFFWHITENEW
                               : Colors.transparent,
                         ),
-                        SizedBox(width: 4),
+                        const SizedBox(width: 4),
                         Icon(
                           Icons.view_list,
                           size: 20,
@@ -171,7 +171,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                 ),
                 InkWell(
                   onTap: () {
-                    // Dropdown or other actions can be handled here
                   },
                   child: Container(
                     width: 26,
@@ -210,7 +209,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   Widget _buildGridView() {
     return ListView.builder(
       shrinkWrap: true,
-      key: ValueKey('grid'),
+      key: const ValueKey('grid'),
       itemCount: categoryDetails.length,
       itemBuilder: (context, index) {
         final category = categoryDetails[index];
@@ -225,7 +224,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: 25),
                 child: Text(
                   category.heading,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                     color: ColorResources.TEXTOFFWHITE,
@@ -233,7 +232,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                 ),
               ),
               const SizedBox(height: 21),
-              _buildSubCategoryRows(subCategories, category), // Build rows of subcategories
+              _buildSubCategoryRows(subCategories, category),
             ],
           ),
         );
@@ -299,7 +298,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   Widget _buildListView() {
     return ListView.builder(
       shrinkWrap: true,
-      key: ValueKey('list'),
+      key: const ValueKey('list'),
       itemCount: categoryDetails.length,
       itemBuilder: (context, index) {
         final category = categoryDetails[index];
@@ -314,7 +313,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: 25),
                 child: Text(
                   category.heading,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.bold,
                     color: ColorResources.TEXTOFFWHITE,
@@ -324,7 +323,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
               const SizedBox(height: 30),
               ...subCategories.map((subCategory) => ListTile(
                 onTap: () => _onCategoryTap(category),
-                contentPadding: EdgeInsets.symmetric(horizontal: 25),
+                contentPadding: const EdgeInsets.symmetric(horizontal: 25),
                 leading: SizedBox(
                   width: 70,
                   height: 60,
@@ -350,7 +349,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
                   ),
                 ),
               )),
-           SizedBox(height: 30,) ],
+           const SizedBox(height: 30,) ],
           ),
         );
       },

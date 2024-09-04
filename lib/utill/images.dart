@@ -1,10 +1,6 @@
 class Images {
 
-
-
-
                 static const String Cash = 'assets/images/mint.png';
-
                 static const String Vouchers = 'assets/images/vouchers.png';
                 static const String Utility_bill = 'assets/images/utility&all-bills.png';
                 static const String Scan_Pay = 'assets/images/scan&pay.png';
