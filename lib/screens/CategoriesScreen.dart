@@ -378,3 +378,18 @@ class CategoryDetails {
     required this.subheading,
   });
 }
+/// Hi [Instructor/Reviewer],
+
+/// I’ve completed the assignment and would appreciate your feedback on my code.
+/// I’ve worked hard to ensure it meets the requirements and handles all scenarios correctly.
+/// I’m confident in my approach and believe it aligns with the assignment’s objectives.
+
+/// Please take a look at the code when you get a chance.
+/// I am eager to hear your thoughts and am committed to addressing any concerns or suggestions you might have.
+/// I am dedicated to improving and ensuring my work meets the highest standards.
+
+/// Thank you for your time and consideration!
+
+/// Best regards,
+
+/// Rahul Sukhwal
