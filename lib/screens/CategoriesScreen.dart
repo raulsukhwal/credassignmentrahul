@@ -216,7 +216,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         final List<CategoryDetails> subCategories = category.subCategories;
 
         return Padding(
-          padding: const EdgeInsets.symmetric(vertical: 7.0),
+          padding: const EdgeInsets.symmetric(vertical: 2),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -250,7 +250,7 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
         final subCategory = subCategories[j];
         rowChildren.add(
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 9),
+            padding: const EdgeInsets.symmetric(horizontal: 9,vertical: 3),
             child: GestureDetector(
               onTap: () => _onCategoryTap(category),
               child: Card(
